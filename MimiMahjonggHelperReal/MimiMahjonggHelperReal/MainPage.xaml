@@ -1,0 +1,36 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MimiMahJonggHelperReal.MainPage" 
+             Title="Mimi's Mahjongg Helper"
+             BackgroundColor="{StaticResource PageBackground}">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="12" Padding="20,25">
+
+            <Label
+                Text="Mimi's Mahjongg Helper"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="26"
+                HorizontalOptions="Center"
+                Margin="0,0,0,20"
+                TextColor="{StaticResource PrimaryTextColor}"/>
+
+            <Button Text="SNA KKKK E BIT" FontSize="Medium" HeightRequest="65" Clicked="OnMahjonggCategoryClicked" CornerRadius="10" BackgroundColor="{StaticResource AppPrimaryColor}" TextColor="{StaticResource AppPrimaryTextColor}"/>
+            <Button Text="SNA KKKK E EYES" FontSize="Medium" HeightRequest="65" Clicked="OnMahjonggCategoryClicked" CornerRadius="10" BackgroundColor="{StaticResource AppPrimaryColor}" TextColor="{StaticResource AppPrimaryTextColor}"/>
+            <Button Text="DEAD RINGER" FontSize="Medium" HeightRequest="65" Clicked="OnMahjonggCategoryClicked" CornerRadius="10" BackgroundColor="{StaticResource AppPrimaryColor}" TextColor="{StaticResource AppPrimaryTextColor}"/>
+            <Button Text="SNA KKKK E CHARMER" FontSize="Medium" HeightRequest="65" Clicked="OnMahjonggCategoryClicked" CornerRadius="10" BackgroundColor="{StaticResource AppPrimaryColor}" TextColor="{StaticResource AppPrimaryTextColor}"/>
+            <Button Text="DO THE NUMBERS" FontSize="Medium" HeightRequest="65" Clicked="OnMahjonggCategoryClicked" CornerRadius="10" BackgroundColor="{StaticResource AppPrimaryColor}" TextColor="{StaticResource AppPrimaryTextColor}"/>
+            <Button Text="ON THE STRAIGHT AND NARROW" FontSize="Medium" HeightRequest="65" Clicked="OnMahjonggCategoryClicked" CornerRadius="10" BackgroundColor="{StaticResource AppPrimaryColor}" TextColor="{StaticResource AppPrimaryTextColor}"/>
+            <Button Text="ANACONDA" FontSize="Medium" HeightRequest="65" Clicked="OnMahjonggCategoryClicked" CornerRadius="10" BackgroundColor="{StaticResource AppPrimaryColor}" TextColor="{StaticResource AppPrimaryTextColor}"/>
+            <Button Text="MJ ANTIDOTE" FontSize="Medium" HeightRequest="65" Clicked="OnMahjonggCategoryClicked" CornerRadius="10" BackgroundColor="{StaticResource AppPrimaryColor}" TextColor="{StaticResource AppPrimaryTextColor}"/>
+
+            <Label Text="Appearance" FontSize="Small" FontAttributes="Bold" Margin="0,25,0,5" TextColor="{StaticResource PrimaryTextColor}"/>
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <RadioButton x:Name="LightModeRadio" Content="Light" GroupName="Theme" CheckedChanged="ThemeRadioButton_CheckedChanged" TextColor="{StaticResource PrimaryTextColor}"/>
+                <RadioButton x:Name="DarkModeRadio" Content="Dark" GroupName="Theme" CheckedChanged="ThemeRadioButton_CheckedChanged" TextColor="{StaticResource PrimaryTextColor}"/>
+                <RadioButton x:Name="SystemModeRadio" Content="System" GroupName="Theme" IsChecked="True" CheckedChanged="ThemeRadioButton_CheckedChanged" TextColor="{StaticResource PrimaryTextColor}"/>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

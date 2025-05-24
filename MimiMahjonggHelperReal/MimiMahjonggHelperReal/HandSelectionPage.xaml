@@ -1,0 +1,17 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MimiMahJonggHelperReal.HandSelectionPage"
+             Title="Select a Hand"
+             BackgroundColor="{StaticResource PageBackground}">
+    <StackLayout Padding="10">
+        <Label x:Name="CategoryTitleLabel" FontSize="Large" FontAttributes="Bold" Margin="0,0,0,10" TextColor="{StaticResource PrimaryTextColor}"/>
+        <ListView x:Name="HandsListView"
+                  ItemSelected="OnHandSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding HandName}" DetailColor="Gray" TextColor="{StaticResource PrimaryTextColor}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
